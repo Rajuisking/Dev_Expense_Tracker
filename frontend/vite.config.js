@@ -8,7 +8,7 @@ export default defineConfig({
     // Proxy API calls to backend so you don't need full URL in dev
     proxy: {
       "/api": {
-        target: "http://localhost:5000",
+        target: "https://dev-expense-tracker-ves6.onrender.com",
         changeOrigin: true,
       },
     },
