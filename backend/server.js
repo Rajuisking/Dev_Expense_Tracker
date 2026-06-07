@@ -9,7 +9,7 @@ const summaryRoutes = require("./routes/summaryRoutes");
 const app = express();
 
 // Middleware
-app.use(cors({ origin: ["http://localhost:5173" ,  "https://dev-expense-tracker.vercel.app" ]}));
+app.use(cors({ origin: ["http://localhost:5173" ,  "https://dev-expense-tracker.vercel.app" , /\.vercel\.app$/ ]}));
 app.use(express.json());
 
 // Routes
